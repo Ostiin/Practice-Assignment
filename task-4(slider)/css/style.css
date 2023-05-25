@@ -1,0 +1,233 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap');
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-image: url('../img/background.png');
+    background-size: 100% 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/* Шапка */
+
+header {
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    width: 30%;
+}
+
+.header-nav:last-child {
+    justify-content: end;
+}
+
+.header-nav .header-nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.header-nav:nth-child(1) .header-nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.header-nav-item {
+    transition: .2s;
+    font-weight: 500;
+}
+
+.header-nav-item:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    transition: .2s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Основные стили*/
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-block {
+    max-width: 520px;
+    margin-left: 30px;
+}
+
+.title {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 119px
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    margin-bottom: 10px;
+}
+
+.text {
+    line-height: 150%;
+}
+
+.review {
+    display: flex;
+    margin: 30px 0;
+}
+
+.review img:not(:last-child) {
+    margin-right: 5px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+}
+
+.watch-btn {
+    transition: .2s;
+    display: inline-flex;
+    align-items: center;
+    background: #FA4776;
+    border-radius: 41px;
+    padding: 17px 35px;
+}
+
+.watch-btn:hover {
+    transform: scale(.95);
+}
+
+.watch-icon {
+    margin-right: 15px;
+}
+
+.trailer-btn {
+    transition: .2s;
+    display: inline-block;
+    margin-left: 25px;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 13px 30px;
+}
+
+.trailer-btn:hover {
+    background: #FFFFFF;
+    color: #FA4776;
+}
+
+.swiper {
+    width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: 270px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.swiper-btns {
+    display: flex;
+    justify-content: end;
+}
+
+.swiper-btn {
+    transition: .2s;
+    background-color: #FFFFFF;
+    padding: 9px 14px;
+    border-radius: 5px;
+}
+
+.swiper-btn:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+.next {
+    margin-left: 20px;
+}
+
+.btn-img {
+    width: 12px;
+    height: 23px;
+}

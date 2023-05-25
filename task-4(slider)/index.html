@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание 2</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="header-nav">
+                <a href="#" class="header-nav-item">
+                    <li>Movies</li>
+                </a>
+                <a href="#" class="header-nav-item">
+                    <li>TV Shows</li>
+                </a>
+                <a href="#" class="header-nav-item">
+                    <li>Documentaries</li>
+                </a> 
+            </ul>
+            <img src="img/logo.png" alt="logo-png" class="logo">
+            <ul class="header-nav">
+                <a href="#" class="header-nav-item">
+                    <li><img src="img/search.png" alt="search icon" class="header-nav-img"></li>
+                </a>
+                <a href="#" class="header-nav-item">
+                    <li><img src="img/notification.png" alt="notification icon" class="header-nav-img"></li>
+                </a>
+                <a href="#" class="header-nav-item">
+                    <li class="semi-bold">Sign Up</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="first-block">
+                <h1 class="title">STAR WARS</h1>
+                <h2 class="subtitle">THE RISE OF SKYWALKER</h2>
+                <p class="text">
+                    The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith 
+                    reaches its peak bringing the Skywalker saga to its end. 
+                </p>
+                <div class="review">
+                    <img src="img/star.svg" alt="Звезда" class="star">
+                    <img src="img/star.svg" alt="Звезда" class="star">
+                    <img src="img/star.svg" alt="Звезда" class="star">
+                    <img src="img/star.svg" alt="Звезда" class="star">
+                    <img src="img/empty_star.svg" alt="Пустая звезда" class="star">
+                </div>
+                <div class="btns">
+                    <a href="#" class="watch-btn">
+                        <img src="img/play.png" alt="watch icon" class="watch-icon">
+                        Watch Now
+                    </a>
+                    <a href="#" class="trailer-btn">Trailer</a>
+                </div>
+            </div>
+            <div class="second-block">
+                <div class="swiper mySwiper">
+                    <div class="swiper-btns">
+                        <img src="img/left.svg" alt="prev" class="swiper-btn prev">
+                        <img src="img/right.svg" alt="next" class="swiper-btn next">
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/7.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 10,
+                depth: 100,
+                modifier: 3,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+        });
+    </script>
+
+</body>
+</html>

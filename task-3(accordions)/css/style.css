@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 100px auto;
+}
+
+.first-block {
+    max-width: 400px;
+}
+
+.first-title {
+    font-size: 34px;
+    line-height: 130%;
+    color: #283F75; 
+    margin-bottom: 50px;   
+}
+
+.first-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #5B5B5B;
+}
+
+.first-text p {
+    margin-bottom: 30px;
+}
+
+.second-block {
+    display: flex;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+.second-review {
+    margin-top: 20px;
+}
+
+.second-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+    height: 60px;
+    margin-right: 20px;
+    border: 1px solid #C6CDDA;
+}
+
+.second-card:hover {
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+}
+.accordion-item {
+    width: 462px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+    border: 1px solid #E6E9F0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 25px;
+    color: #34539A;
+}
+
+.second-card-title, .second-card-num {
+    font-size: 15px;
+    font-weight: 700;
+    color: #283F75; 
+}
+
+.second-card-title {
+    margin-left: 25px;
+}
+
+.second-card-review {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.second-card-num {
+    margin-left: 2px;
+    margin-right: 50px;
+}
+
+.review-arrow {
+    transition: .2s;
+    width: 10px;
+    height: 10px;
+    background: url('../img/arrow.svg');
+    background-size: 100% 100%;
+}
+
+.accordion-item.active .review-arrow {
+    transform: rotate(180deg);
+}
+
+.rating {
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+  
+.rating input {
+    display: none;
+}
+  
+.rating label {
+    margin-right: 5px;
+    width: 27px;
+    cursor: pointer;
+}
+  
+.rating label svg {
+    width: 100%;
+    height: auto;
+}
+  
+.rating label:hover svg,
+.rating label:hover ~ label svg,
+.rating input:checked ~ label svg {
+    fill: #FFC700;
+}
+
+
+
